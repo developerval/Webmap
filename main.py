@@ -38,5 +38,6 @@ else 'orange' if 10000000 <= x['properties']['POP2005'] < 20000000 else 'red'}))
 
 map.add_child(fgp)
 map.add_child(fgv)
+map.keep_in_front(fgv)
 map.add_child(folium.LayerControl())
 map.save("index.html")
